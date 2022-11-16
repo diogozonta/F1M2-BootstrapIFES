@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>Posicionamento</title>
+</head>
+
+<body>
+    <!-- <div class="p-5 bg-primary fixed-top"></div> -->
+    <!-- Após fixar um contéudo ele ficará "flutuando" na página, ou seja, os elementos que virão após ele na ordem de renderização ficarão atrás dele e não após ele -->
+    <!-- <div class="p-5 invisible"></div> -->
+    <!-- Para resolver esse problema basta colocar uma div com o mesmo tamanho do contéudo que está fixo após ele, ou seja, para renderizar depois do contéudo fixo. Dessa maneira preenche o vão com um contéudo "vazio" e dessa maneira os contéudos que virão após esse contéudo "vazio" irão renderizar normalmente. -->
+    <!-- <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo facilis illum cumque doloremque natus -->
+        <!-- adipisci nihil at, ad nesciunt quae doloribus eius error maiores eligendi vero vel vitae delectus laborum?</p>
+    <div class="p-5 invisible"></div>
+    <div class="p-5 bg-dark fixed-bottom"></div> -->
+
+    <div class="container my-3 hstack gap-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="vr"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+    <div class="container my-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success position-absolute"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+</body>
+
+</html>
