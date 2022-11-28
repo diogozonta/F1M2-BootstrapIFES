@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 10</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 10</h1>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7
+            adiconando as seguintes situações de validação de campos:</p>
+        <ul class="lead">
+            <li>O campo Nome Completo deve estar marcado como válido;</li>
+            <li>O campo CPF deve estar marcado como inválido e com a mensagem de validação "Campo obrigatório";</li>
+            <li>O campo Data de Nascimento deve estar marcado como válido;</li>
+            <li>O campo Gênero deve estar marcado como inválido e com a mensagem de validação "Campo obrigatório";</li>
+            <li>O campo Endereço deve estar marcado como válido.</li>
+        </ul>
+        <p class="lead">*Os campos válidos devem ter valores fictícios preenchidos nos campos.</p>
+        <hr>
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container">
+        <form>
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-10 col-xl-9">
+                    <h1 class="display-6">Cadastro de cliente</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-10 col-xl-9">
+                    <div class="input-group">
+                        <span class="input-group-text fs-3">
+                            <i class="bi-person-fill"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg is-valid" placeholder="Nome completo"
+                            value="João da Silva">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-3 mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text fs-3">
+                            <i class="bi-person-vcard"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg is-invalid" placeholder="CPF">
+                        <div class="invalid-feedback">*Campo obrigatório</div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-3 mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text fs-3">
+                            <i class="bi-calendar-date-fill"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg is-valid" placeholder="dd/mm/aaaa"
+                            value="15/09/1992">
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xl-3 mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text fs-3">
+                            <i class="bi-gender-ambiguous"></i>
+                        </span>
+                        <select class="form-select form-select-lg is-invalid">
+                            <option value="">Gênero</option>
+                            <option value="">Masculino</option>
+                            <option value="">Feminino</option>
+                        </select>
+                        <div class="invalid-feedback">*Campo obrigatório</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-10 col-xl-9">
+                    <div class="input-group">
+                        <span class="input-group-text fs-3">
+                            <i class="bi-house-add-fill"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg is-valid" placeholder="Endereço completo"
+                            value="Av. Prefeito Samuel Batista Cruz, s/n - Três Barras, Linhares - ES">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-10 col-xl-9">
+                    <button class="btn btn-primary btn-lg">Salvar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
